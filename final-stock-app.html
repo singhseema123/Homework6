@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stock Symbol Prices</title>
+  <style type="text/css">
+    button,
+    div,
+    form,
+    input {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Stock Search</h1>
+
+    <form id="stock-form">
+      <label for="stock-input">Add a Stock Symbol</label>
+      <input type="text" id="stock-input">
+
+      <!-- Button triggers new stock to be added -->
+      <input id="add-stock" type="submit" value="New Stock Symbol">
+
+      <!-- Button to trigger clearing of the stocks-view -->
+      <button id="clear-stock">Clear Stock Details</button> 
+    </form>
+
+    <!-- Rendered buttons will get dumped here  -->
+    <div id="buttons-view"></div>
+
+    <!-- stocks will get dumped Here inside stocktabbody-->
+    <div id="stocks-view">
+      <table class="table table-bordered">
+        <tbody class="stocktabbody">
+
+        </tbody>
+      </table>  
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+  </div>
+</body>
+
+</html>
